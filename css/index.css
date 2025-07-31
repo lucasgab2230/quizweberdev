@@ -20,6 +20,10 @@ body {
     padding: 10px;
 }
 
+.start-btn-container {
+    padding: 100%;
+}
+
 .start-btn {
     position: absolute;
     left: 500px;
