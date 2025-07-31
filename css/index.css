@@ -8,5 +8,13 @@
 body {
     height: 100vh;
     background-color: #f0f0f0;
-    
+}
+
+.title-header {
+    background-color: transparent;
+    border-color: #333;
+}
+
+.title-header h1 {
+    font-size: 30px;
 }
