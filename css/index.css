@@ -12,7 +12,7 @@ body {
 
 .title-header {
     background-color: transparent;
-    border-color: 2px solid #333;
+    border-bottom: 2px solid #333;
 }
 
 .title-header h1 {
@@ -30,5 +30,5 @@ body {
 footer {
     background-color: transparent;
     color: #333;
-    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
 }
