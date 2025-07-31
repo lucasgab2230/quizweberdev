@@ -17,7 +17,7 @@ body {
 
 .title-header h1 {
     font-size: 30px;
-    margin-left: 20px;
+    padding: 20px;
 }
 
 .start-btn {
