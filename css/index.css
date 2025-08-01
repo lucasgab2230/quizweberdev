@@ -36,11 +36,14 @@ body {
     margin: 20px auto;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .start-btn:hover {
     background-color: #0e6a8e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 footer {
