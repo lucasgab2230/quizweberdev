@@ -35,3 +35,17 @@ body {
     font-size: 18px;
     transition: transform 0.6s;
 }
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .front {
+    transform: rotateY(360deg);
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
