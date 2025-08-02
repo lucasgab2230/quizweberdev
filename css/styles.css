@@ -9,6 +9,14 @@ body {
   margin: 0;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
 .card {
   width: 320px;
   height: 160px;
