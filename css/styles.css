@@ -5,3 +5,13 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+.container {
+    text-align: center;
+}
+
+.card {
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+}
