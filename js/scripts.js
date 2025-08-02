@@ -91,8 +91,10 @@ const cards = [
 let currentIndex = 0;
 
 function updateCard() {
-    front.textContent = cards[currentIndex].question;
-    back.textContent = cards[currentIndex].answer;
+    const currentCard = cards[currentIndex];
+    front.innerHTML = `<strong>Pergunta:</strong><br>${currentCard.question}`;
+    back.innerHTML = `<strong>Resposta:</strong><br>${currentCard.answer}`;
+    flashcard.classList.remove("flipped");
 }
 
 flipBtn.addEventListener("click", () => {
