@@ -9,20 +9,12 @@ body {
   margin: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
 .card {
-  width: 300px; /* menor largura */
-  height: 150px; /* menor altura */
+  width: 320px;
+  height: 160px;
   perspective: 1000px;
   position: relative;
-  margin-bottom: 30px; /* espaço entre card e botões */
+  margin-bottom: 40px; /* espaçamento entre card e botões */
 }
 
 .card .front,
@@ -37,12 +29,12 @@ body {
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 16px;
   transition: transform 0.6s;
-  flex-direction: column;
-  text-align: center;
 }
 
 .card .back {
@@ -57,11 +49,28 @@ body {
   transform: rotateY(360deg);
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 16px;
+}
+
 .controls {
   display: flex;
   justify-content: center;
   gap: 15px;
-  padding-top: 10px;
+  margin-top: 10px; /* espaçamento extra acima dos botões */
 }
 
 .controls button {
@@ -77,12 +86,4 @@ body {
 
 .controls button:hover {
   background-color: #005f99;
-}
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 }
