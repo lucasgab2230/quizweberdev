@@ -11,6 +11,11 @@ body {
 
 .container {
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
@@ -22,8 +27,8 @@ body {
 }
 
 .card {
-  width: 320px;
-  height: 160px;
+  width: 90%;
+  max-width: 320px;
   perspective: 1000px;
   position: relative;
   margin-bottom: 40px; /* espaçamento entre card e botões */
