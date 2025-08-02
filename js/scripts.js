@@ -1,6 +1,8 @@
 const flashcard = document.getElementById("flashcard");
 const front = document.querySelector(".front");
 const back = document.querySelector(".back");
+const questionParagraph = document.querySelector(".question__paragraph");
+const answerParagraph = document.querySelector(".answer__paragraph");
 const flipBtn = document.getElementById("flip");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
@@ -92,8 +94,8 @@ let currentIndex = 0;
 
 function updateCard() {
     const currentCard = cards[currentIndex];
-    front.innerHTML = `<strong>Pergunta:</strong><br>${currentCard.question}`;
-    back.innerHTML = `<strong>Resposta:</strong><br>${currentCard.answer}`;
+    questionParagraph.textContent = `${currentCard.question}`;
+    answerParagraph.textContent = `${currentCard.answer}`;
     flashcard.classList.remove("flipped");
 }
 
