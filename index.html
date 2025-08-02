@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um quiz de tecnologias web feito por Lucas Witchemichen para a feira EducaTech.">
-    <meta name="author" content="Lucas Witchemichen (lucasgab2230)">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>LuwiDev Quiz</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>QuizWeberDev - Um site de quiz de perguntas para entrevistas de emprego</title>
 </head>
 <body>
-    <header class="title-header">
-        <h1>LuwiDev Quiz</h1>
-    </header>
-
-    <a href="./quiz.html" class="start-btn">Começar quiz</a>
-    
-    <footer>
-        <p class="copyright">&copy; 2025 Lucas Witchemichen</p>
-    </footer>
+    <div class="container">
+        <h1>QuizWeberDev</h1>
+        <div id="flashcard" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div class="controls">
+            <button id="prev">Anterior</button>
+            <button id="flip">Virar</button>
+            <button id="next">Próximo</button>
+        </div>
+    </div>
 </body>
 </html>
