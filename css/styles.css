@@ -26,7 +26,7 @@ body {
 .card {
   width: 90%;
   max-width: 320px;
-  height: 400px; /* Altura fixa adicionada */
+  height: 400px;
   perspective: 1000px;
   position: relative;
   margin-bottom: 40px;
@@ -45,12 +45,11 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* Removido justify-content: center e align-items: center */
   text-align: center;
   font-size: 16px;
   transition: transform 0.6s;
-  overflow-y: auto;
+  overflow: hidden; /* Alterado de overflow-y: auto para overflow: hidden */
 }
 .card .back {
   transform: rotateY(180deg);
@@ -63,15 +62,19 @@ body {
 }
 .card-content {
   display: flex;
-  max-height: 100%;
   flex-direction: column;
   gap: 8px;
-  overflow-y: auto;
+  width: 100%;
+  height: 100%; /* Adicionado height: 100% */
+  overflow-y: auto; /* Mantido overflow-y: auto aqui para permitir rolagem */
+  padding: 10px; /* Adicionado padding para melhor espaçamento */
+  box-sizing: border-box; /* Garante que padding não afete o tamanho total */
 }
 .card-content h3 {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  flex-shrink: 0; /* Impede que o título encolha */
 }
 .card-content p {
   margin: 0;
@@ -79,6 +82,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+  text-align: left; /* Alterado para alinhamento à esquerda para melhor legibilidade */
 }
 .controls {
   display: flex;
