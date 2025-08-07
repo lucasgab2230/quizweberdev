@@ -74,7 +74,7 @@ body {
   font-weight: bold;
   flex-shrink: 0;
   width: 100%;
-  text-align: center;
+  text-align: center; /* Mantém o título centralizado */
 }
 .card-content p {
   margin: 0;
@@ -82,15 +82,12 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  text-align: center;
+  text-align: left; /* Alterado para alinhar o texto à esquerda */
   width: 100%;
   line-height: 1.4;
   overflow: visible;
   flex-grow: 1;
-  /* Removido display: flex para evitar conflitos com centralização */
-  /* Adicionado padding para garantir que o texto não fique muito próximo às bordas */
   padding: 0 5px;
-  /* Garantir que o texto esteja centralizado */
   display: flex;
   flex-direction: column;
   justify-content: center;
