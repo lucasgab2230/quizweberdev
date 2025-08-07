@@ -62,20 +62,19 @@ body {
 .card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
   width: 100%;
-  height: 100%;
+  /* Removido height: 100% para permitir que o conteúdo determine a altura */
   overflow-y: auto; /* Permite rolagem se o conteúdo for muito grande */
   padding: 10px;
   box-sizing: border-box;
+  /* Removido justify-content: center e align-items: center para evitar corte */
 }
 .card-content h3 {
   margin: 0 0 10px 0; /* Adiciona margem inferior para espaçamento */
   font-size: 18px;
   font-weight: bold;
-  flex-shrink: 0; /* Impede que o título encolha */
-  width: 100%; /* Garante que o título ocupe toda a largura para centralização */
+  /* Removido flex-shrink: 0 e width: 100% para permitir flexibilidade */
+  text-align: center; /* Centraliza o texto */
 }
 .card-content p {
   margin: 0;
@@ -84,7 +83,8 @@ body {
   overflow-wrap: break-word;
   hyphens: auto;
   text-align: center; /* Centraliza o texto */
-  width: 100%; /* Garante que o parágrafo ocupe toda a largura para centralização */
+  /* Removido width: 100% para permitir flexibilidade */
+  line-height: 1.4; /* Adicionado espaçamento entre linhas para melhor legibilidade */
 }
 .controls {
   display: flex;
