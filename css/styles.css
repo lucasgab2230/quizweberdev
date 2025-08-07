@@ -22,21 +22,32 @@ body {
     align-items: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 .card {
   width: 90%;
   max-width: 320px;
-  height: 400px;
+  min-height: 200px; /* Altura mínima em vez de fixa */
   perspective: 1000px;
   position: relative;
   margin-bottom: 40px;
-  overflow: visible; /* Alterado de hidden para visible */
+  overflow: visible; /* Permite que o conteúdo seja exibido além dos limites */
+}
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  width: 100%;
+  height: 100%;
+}
+.card.flipped .card-body {
+  transform: rotateY(180deg);
 }
 .card .front,
 .card .back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
   backface-visibility: hidden;
   background: white;
   border: 1px solid #ccc;
@@ -47,18 +58,11 @@ body {
   flex-direction: column;
   text-align: center;
   font-size: 16px;
-  transition: transform 0.6s;
-  overflow: hidden; /* Mantido aqui para evitar overflow do container */
-  transform-style: preserve-3d; /* Adicionado para melhor renderização 3D */
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .card .back {
   transform: rotateY(180deg);
-}
-.card.flipped .front {
-  transform: rotateY(180deg);
-}
-.card.flipped .back {
-  transform: rotateY(0deg); /* Alterado de 360deg para 0deg */
 }
 .card-content {
   display: flex;
@@ -73,7 +77,7 @@ body {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: bold;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Impede que o título encolha */
   width: 100%;
   text-align: center;
   padding: 0 10px;
@@ -85,7 +89,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  text-align: left;
+  text-align: left; /* Alinha o texto da resposta à esquerda */
   width: 100%;
   line-height: 1.4;
   overflow: visible; /* Garante que o texto não seja cortado */
