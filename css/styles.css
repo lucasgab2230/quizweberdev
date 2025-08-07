@@ -64,16 +64,15 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  overflow-y: auto; /* Permite rolagem se o conteúdo for muito grande */
+  overflow-y: auto;
   padding: 10px;
   box-sizing: border-box;
-  /* Removido justify-content: center e align-items: center */
 }
 .card-content h3 {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: bold;
-  flex-shrink: 0; /* Impede que o título encolha */
+  flex-shrink: 0;
   width: 100%;
   text-align: center;
 }
@@ -85,13 +84,16 @@ body {
   hyphens: auto;
   text-align: center;
   width: 100%;
-  line-height: 1.4; /* Adicionado espaçamento entre linhas */
-  /* Removido propriedades que podem causar corte */
-  overflow: visible; /* Garante que o texto não seja cortado */
-  flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
-  display: flex; /* Adicionado para centralizar o texto */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  line-height: 1.4;
+  overflow: visible;
+  flex-grow: 1;
+  /* Removido display: flex para evitar conflitos com centralização */
+  /* Adicionado padding para garantir que o texto não fique muito próximo às bordas */
+  padding: 0 5px;
+  /* Garantir que o texto esteja centralizado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .controls {
   display: flex;
