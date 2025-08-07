@@ -88,7 +88,7 @@ const cards = [
         question: "O que é acessibilidade (ally) na Web?",
         answer: "Acessibilidade é o conjunto de práticas que tornam a Web utilizável por pessoas com deficiências, como uso de ARIA, contraste e navegação por teclado."
     },
-]
+];
 
 let currentIndex = 0;
 
@@ -97,6 +97,22 @@ function updateCard() {
     questionParagraph.textContent = `${currentCard.question}`;
     answerParagraph.textContent = `${currentCard.answer}`;
     flashcard.classList.remove("flipped");
+    
+    // Garante que o conteúdo seja exibido completamente após a atualização
+    setTimeout(() => {
+        // Verifica se o conteúdo excede a altura do cartão
+        const frontContent = document.querySelector(".front .card-content");
+        const backContent = document.querySelector(".back .card-content");
+        
+        // Ajusta a altura do conteúdo se necessário
+        if (frontContent.scrollHeight > frontContent.clientHeight) {
+            frontContent.style.overflowY = "auto";
+        }
+        
+        if (backContent.scrollHeight > backContent.clientHeight) {
+            backContent.style.overflowY = "auto";
+        }
+    }, 100);
 }
 
 flipBtn.addEventListener("click", () => {
