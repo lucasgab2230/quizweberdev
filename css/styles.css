@@ -64,7 +64,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  overflow-y: auto; /* Permite rolagem se o conteúdo for muito grande */
+  overflow-y: auto; /* Permite rolagem vertical quando o conteúdo excede a altura */
   padding: 10px;
   box-sizing: border-box;
 }
@@ -82,13 +82,11 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: left; /* Alinha o texto da resposta à esquerda */
   width: 100%;
   line-height: 1.4;
   overflow: visible; /* Garante que o texto não seja cortado */
-  flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
-  padding: 0 5px;
-  /* Removido display: flex para evitar conflitos com overflow */
+  padding: 0 5px; /* Adiciona um pequeno espaçamento nas laterais */
 }
 .controls {
   display: flex;
