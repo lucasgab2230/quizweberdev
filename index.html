@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>WeberDevCard - Um site de flashcards de estudo para entrevistas de emprego</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>WeberDevCard - Flashcards para Entrevistas</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>WeberDevCard</h1>
+  <div class="container">
+    <header class="header">
+      <h1>WeberDevCard</h1>
+      <p class="subtitle">Flashcards de estudo para entrevistas de emprego</p>
+    </header>
+
+    <div id="flashcard" class="card">
+      <div class="card-body">
+        <div class="front">
+          <div class="card-content">
+            <h3 class="question">Pergunta:</h3>
+            <p class="question__paragraph"></p>
+          </div>
         </div>
-        <div id="flashcard" class="card">
-            <div class="card-body">
-                <div class="front">
-                    <div class="card-content">
-                        <h3 class="question">Pergunta:</h3>
-                        <p class="question__paragraph"></p>
-                    </div>
-                </div>
-                <div class="back">
-                    <div class="card-content">
-                        <h3 class="answer">Resposta:</h3>
-                        <p class="answer__paragraph"></p>
-                    </div>
-                </div>
-            </div>
+        <div class="back">
+          <div class="card-content">
+            <h3 class="answer">Resposta:</h3>
+            <p class="answer__paragraph"></p>
+          </div>
         </div>
-        <div class="controls">
-            <button id="prev">Anterior</button>
-            <button id="flip">Virar</button>
-            <button id="next">Próximo</button>
-        </div>
+      </div>
     </div>
-    <script src="./js/scripts.js"></script>
+
+    <div class="controls">
+      <button id="prev" aria-label="Flashcard anterior">⏮ Anterior</button>
+      <button id="flip" aria-label="Virar flashcard">🔄 Virar</button>
+      <button id="next" aria-label="Próximo flashcard">Próximo ⏭</button>
+    </div>
+  </div>
+
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
