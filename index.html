@@ -11,6 +11,7 @@
     <header class="header">
       <h1>WeberDevCard</h1>
       <p class="subtitle">Flashcards de estudo para entrevistas de emprego</p>
+      <p class="progress" id="progress">Card 1 de 10</p>
     </header>
 
     <div id="flashcard" class="card">
@@ -18,13 +19,13 @@
         <div class="front">
           <div class="card-content">
             <h3 class="question">Pergunta:</h3>
-            <p class="question__paragraph"></p>
+            <p class="question__paragraph" aria-live="polite"></p>
           </div>
         </div>
         <div class="back">
           <div class="card-content">
             <h3 class="answer">Resposta:</h3>
-            <p class="answer__paragraph"></p>
+            <p class="answer__paragraph" aria-live="polite"></p>
           </div>
         </div>
       </div>
