@@ -4,6 +4,7 @@ const answerParagraph = document.querySelector(".answer__paragraph");
 const flipBtn = document.getElementById("flip");
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
+const progressElement = document.getElementById("progress");
 
 const cards = [
   { question: "O que é o DOM?", answer: "DOM (Document Object Model) é uma interface que representa documentos HTML como objetos manipuláveis via JavaScript." },
@@ -20,12 +21,33 @@ const cards = [
 
 let currentIndex = 0;
 
+function updateProgress() {
+  progressElement.textContent = `Card ${currentIndex + 1} de ${cards.length}`;
+}
+
 function updateCard() {
   const currentCard = cards[currentIndex];
   questionParagraph.textContent = currentCard.question;
   answerParagraph.textContent = currentCard.answer;
   flashcard.classList.remove("flipped");
+  updateProgress();
 }
+
+// Keyboard navigation
+document.addEventListener("keydown", (e) => {
+  switch(e.key) {
+    case "ArrowLeft":
+      prevBtn.click();
+      break;
+    case "ArrowRight":
+      nextBtn.click();
+      break;
+    case " ":
+      e.preventDefault();
+      flipBtn.click();
+      break;
+  }
+});
 
 flipBtn.addEventListener("click", () => {
   flashcard.classList.toggle("flipped");
@@ -41,4 +63,5 @@ prevBtn.addEventListener("click", () => {
   updateCard();
 });
 
+// Initialize
 updateCard();
