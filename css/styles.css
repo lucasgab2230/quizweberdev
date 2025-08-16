@@ -92,7 +92,7 @@ body {
   text-align: left; /* Alinha o texto da resposta à esquerda */
   width: 100%;
   line-height: 1.4;
-  overflow: visible; /* Garante que o texto não seja cortado */
+  overflow: auto; Garante que o texto não seja cortado */
   padding: 0 10px;
   box-sizing: border-box;
   flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
