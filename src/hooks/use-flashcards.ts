@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { flashcards } from "@/data/flashcards";
 
 export function useFlashcards() {
@@ -11,19 +11,19 @@ export function useFlashcards() {
     setIsFlipped(!isFlipped);
   };
 
-  const nextCard = () => {
+  const nextCard = useCallback(() => {
     if (currentCardIndex < flashcards.length - 1) {
       setCurrentCardIndex(currentCardIndex + 1);
       setIsFlipped(false);
     }
-  };
+  }, [currentCardIndex]);
 
-  const prevCard = () => {
+  const prevCard = useCallback(() => {
     if (currentCardIndex > 0) {
       setCurrentCardIndex(currentCardIndex - 1);
       setIsFlipped(false);
     }
-  };
+  }, [currentCardIndex]);
 
   // Handle keyboard navigation
   useEffect(() => {
@@ -37,7 +37,7 @@ export function useFlashcards() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [currentCardIndex, nextCard, prevCard]); // Added missing dependencies
+  }, [nextCard, prevCard]);
 
   return {
     currentCardIndex,
