@@ -41,12 +41,13 @@ export default function LeetCodeQuestionPage({ params }: { params: { id: string 
       
       setFeedback(data.feedback);
       setIsLoading(false);
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error analyzing code:", error);
-      setFeedback(`Error: ${error.message || "Failed to analyze code. Please try again."}`);
+      const errorMessage = error instanceof Error ? error.message : "Unknown error occurred";
+      setFeedback(`Error: ${errorMessage}`);
       setIsLoading(false);
       toast.error("Analysis failed", {
-        description: error.message || "Please check your code and try again",
+        description: errorMessage || "Please check your code and try again",
       });
     }
   };
