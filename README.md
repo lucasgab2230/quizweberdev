@@ -1,65 +1,65 @@
-# WeberDevCard - Code Interview Helper
+# WeberDevCard - Auxiliar de Entrevistas de Código
 
-WeberDevCard is a comprehensive tool to help developers prepare for coding interviews. It features flashcards for essential concepts and LeetCode practice with AI-powered code review.
+WeberDevCard é uma ferramenta abrangente para ajudar desenvolvedores a se prepararem para entrevistas de programação. Possui flashcards para conceitos essenciais e prática do LeetCode com revisão de código por IA.
 
-## Features
+## Recursos
 
-- **Flashcards**: 50 essential Q&A pairs for interview preparation
-- **LeetCode Practice**: 20 curated problems with AI code review
-- **Multi-language Support**: English, Portuguese, Spanish, Chinese, and Japanese
-- **Responsive Design**: Works on all device sizes
-- **Keyboard Navigation**: Easy navigation with arrow keys and spacebar
+- **Flashcards**: 50 pares essenciais de P&R para preparação de entrevistas
+- **Prática do LeetCode**: 20 problemas selecionados com revisão de código por IA
+- **Suporte a Múltiplos Idiomas**: Inglês, Português, Espanhol, Chinês e Japonês
+- **Design Responsivo**: Funciona em todos os tamanhos de dispositivos
+- **Navegação por Teclado**: Navegação fácil com teclas de seta e barra de espaço
 
-## Tech Stack
+## Stack Tecnológica
 
-- **Frontend**: Next.js 14 (App Router) with TypeScript
-- **Styling**: Tailwind CSS with shadcn/ui components
-- **State Management**: React Context API
-- **Animations**: Framer Motion
-- **AI Integration**: Google Gemini API
-- **Deployment**: GitHub Pages with GitHub Actions
+- **Frontend**: Next.js 14 (App Router) com TypeScript
+- **Estilização**: Tailwind CSS com componentes shadcn/ui
+- **Gerenciamento de Estado**: React Context API
+- **Animações**: Framer Motion
+- **Integração com IA**: Google Gemini API
+- **Deploy**: GitHub Pages com GitHub Actions
 
-## Getting Started
+## Primeiros Passos
 
-1. Clone the repository:
+1. Clone o repositório:
    \`\`\`bash
-   git clone https://github.com/your-username/weberdevcard.git
+   git clone https://github.com/seu-usuario/weberdevcard.git
    \`\`\`
 
-2. Install dependencies:
+2. Instale as dependências:
    \`\`\`bash
    pnpm install
    \`\`\`
 
-3. Create a `.env.local` file with your Gemini API key:
+3. Crie um arquivo `.env.local` com sua chave da API do Gemini:
    \`\`\`
-   GEMINI_API_KEY=your_api_key_here
+   GEMINI_API_KEY=sua_chave_api_aqui
    \`\`\`
 
-4. Run the development server:
+4. Execute o servidor de desenvolvimento:
    \`\`\`bash
    pnpm dev
    \`\`\`
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-## Deployment
+## Deploy
 
-This project is configured to deploy to GitHub Pages using GitHub Actions. Simply push to the main branch to trigger the deployment workflow.
+Este projeto está configurado para fazer deploy no GitHub Pages usando GitHub Actions. Simplesmente faça push para a branch principal para acionar o workflow de deploy.
 
-## Learn More
+## Saiba Mais
 
-To learn more about the technologies used in this project:
+Para aprender mais sobre as tecnologias usadas neste projeto:
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [shadcn/ui Documentation](https://ui.shadcn.com/docs)
-- [Google Gemini API Documentation](https://ai.google.dev/docs)
+- [Documentação do Next.js](https://nextjs.org/docs)
+- [Documentação do Tailwind CSS](https://tailwindcss.com/docs)
+- [Documentação do shadcn/ui](https://ui.shadcn.com/docs)
+- [Documentação da API do Google Gemini](https://ai.google.dev/docs)
 
-## Contributing
+## Contribuindo
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
 
-## License
+## Licença
 
-This project is licensed under the MIT License.
+Este projeto está licenciado sob a Licença MIT.
