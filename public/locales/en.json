@@ -1,0 +1,67 @@
+{
+  "common": {
+    "app_name": "WeberDevCard",
+    "flashcards": "Flashcards",
+    "leetcode": "LeetCode",
+    "home": "Home",
+    "language_selector": "Language",
+    "select_language": "Select Language",
+    "english": "English",
+    "portuguese": "Portuguese",
+    "spanish": "Spanish",
+    "chinese": "Chinese",
+    "japanese": "Japanese"
+  },
+  "home": {
+    "title": "Code Interview Helper",
+    "welcome": "Welcome to WeberDevCard",
+    "description": "Your ultimate tool for preparing for coding interviews",
+    "flashcards_section": "Study with Flashcards",
+    "flashcards_description": "Review 50 essential Q&A pairs to prepare for your interviews",
+    "leetcode_section": "Practice LeetCode Questions",
+    "leetcode_description": "Solve 20 curated LeetCode problems with AI-powered code review",
+    "get_started": "Get Started"
+  },
+  "flashcards": {
+    "title": "Interview Flashcards",
+    "flip_card": "Flip Card",
+    "previous_card": "Previous Card",
+    "next_card": "Next Card",
+    "card_of": "Card {{current}} of {{total}}",
+    "controls": {
+      "instructions": "Controls:",
+      "flip": "SPACE - Flip card",
+      "next": "RIGHT ARROW - Next card",
+      "previous": "LEFT ARROW - Previous card"
+    }
+  },
+  "leetcode": {
+    "title": "LeetCode Practice",
+    "select_question": "Select a Question",
+    "question": "Question",
+    "difficulty": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "code_editor": "Code Editor",
+    "run_code": "Run Code",
+    "submit_code": "Submit Code",
+    "ai_feedback": "AI Feedback",
+    "loading_feedback": "Analyzing your code...",
+    "no_feedback": "Run your code to get AI feedback",
+    "feedback_help": "The AI will review your code and provide suggestions for improvement"
+  },
+  "buttons": {
+    "start_flashcards": "Start Flashcards",
+    "practice_leetcode": "Practice LeetCode",
+    "back_to_home": "Back to Home",
+    "view_solution": "View Solution"
+  },
+  "accessibility": {
+    "language_selector": "Select application language",
+    "navigation_slider": "Navigation slider between flashcards and leetcode",
+    "flashcard_flip": "Press spacebar to flip flashcard",
+    "flashcard_previous": "Press left arrow to go to previous flashcard",
+    "flashcard_next": "Press right arrow to go to next flashcard"
+  }
+}
