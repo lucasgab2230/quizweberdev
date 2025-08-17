@@ -6,11 +6,11 @@
     "home": "Inicio",
     "language_selector": "Idioma",
     "select_language": "Seleccionar Idioma",
-    "english": "Inglés",
-    "portuguese": "Portugués",
+    "english": "English",
+    "portuguese": "Português",
     "spanish": "Español",
-    "chinese": "Chino",
-    "japanese": "Japonés"
+    "chinese": "中文",
+    "japanese": "日本語"
   },
   "home": {
     "title": "Ayudante de Entrevistas de Código",
