@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { CodeEditor } from "@/components/leetcode/code-editor";
 import { AIFeedback } from "@/components/leetcode/ai-feedback";
@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { ArrowLeft, Play, Check } from "lucide-react";
+import { toast } from "sonner";
 
 export default function LeetCodeQuestionPage({ params }: { params: { id: string } }) {
   const t = useTranslations("leetcode");
@@ -22,25 +23,31 @@ export default function LeetCodeQuestionPage({ params }: { params: { id: string 
     setIsLoading(true);
     setFeedback(t("loading_feedback"));
     
-    // Simulate API call to Gemini
     try {
-      // In a real implementation, you would call your API endpoint here
-      // const response = await fetch('/api/leetcode/analyze', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ code, questionId: params.id })
-      // });
-      // const result = await response.json();
-      // setFeedback(result.feedback);
+      // Call your backend API route instead of Gemini directly
+      const response = await fetch("/api/analyze-code", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ code, questionId: params.id }),
+      });
       
-      // Simulated response for demo
-      setTimeout(() => {
-        setFeedback("Your code looks good! Consider adding comments for better readability. For optimization, you might want to consider using a more efficient data structure.");
-        setIsLoading(false);
-      }, 1500);
-    } catch (error) {
-      setFeedback("Error analyzing code. Please try again.");
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to analyze code");
+      }
+      
+      setFeedback(data.feedback);
       setIsLoading(false);
+    } catch (error: any) {
+      console.error("Error analyzing code:", error);
+      setFeedback(`Error: ${error.message || "Failed to analyze code. Please try again."}`);
+      setIsLoading(false);
+      toast.error("Analysis failed", {
+        description: error.message || "Please check your code and try again",
+      });
     }
   };
 
