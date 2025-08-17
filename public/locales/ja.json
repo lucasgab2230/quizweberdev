@@ -1,0 +1,67 @@
+{
+  "common": {
+    "app_name": "WeberDevCard",
+    "flashcards": "フラッシュカード",
+    "leetcode": "リートコード",
+    "home": "ホーム",
+    "language_selector": "言語",
+    "select_language": "言語を選択",
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español",
+    "chinese": "中文",
+    "japanese": "日本語"
+  },
+  "home": {
+    "title": "コード面接ヘルパー",
+    "welcome": "WeberDevCardへようこそ",
+    "description": "コーディング面接の準備のための究極のツール",
+    "flashcards_section": "フラッシュカードで学習",
+    "flashcards_description": "面接準備のために50の重要なQ&Aペアを確認する",
+    "leetcode_section": "リートコードの問題を練習",
+    "leetcode_description": "AI搭載のコードレビューで厳選された20のリートコード問題を解く",
+    "get_started": "始める"
+  },
+  "flashcards": {
+    "title": "面接フラッシュカード",
+    "flip_card": "カードを裏返す",
+    "previous_card": "前のカード",
+    "next_card": "次のカード",
+    "card_of": "{{current}} / {{total}} カード",
+    "controls": {
+      "instructions": "操作方法:",
+      "flip": "スペースキー - カードを裏返す",
+      "next": "右矢印 - 次のカード",
+      "previous": "左矢印 - 前のカード"
+    }
+  },
+  "leetcode": {
+    "title": "リートコード練習",
+    "select_question": "問題を選択",
+    "question": "問題",
+    "difficulty": "難易度",
+    "easy": "簡単",
+    "medium": "中級",
+    "hard": "困難",
+    "code_editor": "コードエディタ",
+    "run_code": "コードを実行",
+    "submit_code": "コードを提出",
+    "ai_feedback": "AIフィードバック",
+    "loading_feedback": "コードを分析中...",
+    "no_feedback": "コードを実行してAIフィードバックを取得",
+    "feedback_help": "AIがコードをレビューし、改善の提案を提供します"
+  },
+  "buttons": {
+    "start_flashcards": "フラッシュカードを開始",
+    "practice_leetcode": "リートコードを練習",
+    "back_to_home": "ホームに戻る",
+    "view_solution": "解答を見る"
+  },
+  "accessibility": {
+    "language_selector": "アプリケーション言語を選択",
+    "navigation_slider": "フラッシュカードとリートコード間のナビゲーションスライダー",
+    "flashcard_flip": "スペースバーを押してフラッシュカードを裏返す",
+    "flashcard_previous": "左矢印を押して前のフラッシュカードに移動",
+    "flashcard_next": "右矢印を押して次のフラッシュカードに移動"
+  }
+}
