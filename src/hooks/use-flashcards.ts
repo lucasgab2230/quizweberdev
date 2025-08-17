@@ -37,7 +37,7 @@ export function useFlashcards() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [currentCardIndex]);
+  }, [currentCardIndex, nextCard, prevCard]); // Added missing dependencies
 
   return {
     currentCardIndex,
