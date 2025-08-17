@@ -1,77 +1,65 @@
+# WeberDevCard - Code Interview Helper
 
-# WeberDevCard - Flashcards para Entrevistas
+WeberDevCard is a comprehensive tool to help developers prepare for coding interviews. It features flashcards for essential concepts and LeetCode practice with AI-powered code review.
 
-Flashcards interativos para estudo de entrevistas técnicas de programação, desenvolvido com HTML, CSS e JavaScript vanilla.
+## Features
 
-## 📝 Descrição
+- **Flashcards**: 50 essential Q&A pairs for interview preparation
+- **LeetCode Practice**: 20 curated problems with AI code review
+- **Multi-language Support**: English, Portuguese, Spanish, Chinese, and Japanese
+- **Responsive Design**: Works on all device sizes
+- **Keyboard Navigation**: Easy navigation with arrow keys and spacebar
 
-WeberDevCard é uma aplicação simples e eficaz para estudar conceitos de programação através de flashcards. Perfeito para revisão rápida de tópicos importantes antes de entrevistas técnicas.
+## Tech Stack
 
-## 🚀 Funcionalidades
+- **Frontend**: Next.js 14 (App Router) with TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **State Management**: React Context API
+- **Animations**: Framer Motion
+- **AI Integration**: Google Gemini API
+- **Deployment**: GitHub Pages with GitHub Actions
 
-- 🔄 Virar flashcards para ver perguntas e respostas
-- ⏮️ ⏭️ Navegação entre cards (anterior/próximo)
-- ⌨️ Navegação por teclado (setas e barra de espaço)
-- 📊 Indicador de progresso
-- 📱 Design responsivo
-- ♿ Acessibilidade com leitores de tela
+## Getting Started
 
-## 🎮 Como Usar
+1. Clone the repository:
+   \`\`\`bash
+   git clone https://github.com/your-username/weberdevcard.git
+   \`\`\`
 
-1. **Virar card**: Clique no botão "Virar" ou pressione **Barra de Espaço**
-2. **Card anterior**: Clique em "Anterior" ou pressione **Seta para Esquerda** ⬅️
-3. **Próximo card**: Clique em "Próximo" ou pressione **Seta para Direita** ➡️
+2. Install dependencies:
+   \`\`\`bash
+   pnpm install
+   \`\`\`
 
-## 🛠️ Tecnologias
+3. Create a `.env.local` file with your Gemini API key:
+   \`\`\`
+   GEMINI_API_KEY=your_api_key_here
+   \`\`\`
 
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização e animações 3D
-- **JavaScript** - Lógica e interatividade
-- **Flexbox** - Layout responsivo
-- **Transform 3D** - Efeito de virar cards
+4. Run the development server:
+   \`\`\`bash
+   pnpm dev
+   \`\`\`
 
-## 📁 Estrutura do Projeto
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```markdown
-weber-dev-card/
-├── index.html
-├── README.md
-├── css/
-│   └── styles.css
-└── js/
-    └── scripts.js
-```
+## Deployment
 
-## 🐛 Problema Resolvido
+This project is configured to deploy to GitHub Pages using GitHub Actions. Simply push to the main branch to trigger the deployment workflow.
 
-**Bug**: Texto não aparecia nos flashcards
-**Solução**: Adicionado posicionamento absoluto completo (top, left, right, bottom: 0) para os elementos .front e .back
+## Learn More
 
-## 📈 Melhorias Implementadas
+To learn more about the technologies used in this project:
 
-- ✅ Correção do bug de texto invisível
-- ✅ Indicador de progresso (Card X de Y)
-- ✅ Navegação por teclado
-- ✅ Acessibilidade com aria-live
-- ✅ Design responsivo mobile-first
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [shadcn/ui Documentation](https://ui.shadcn.com/docs)
+- [Google Gemini API Documentation](https://ai.google.dev/docs)
 
-## 🤝 Contribuição
+## Contributing
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 Licença
+## License
 
-MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 👨‍💻 Autor
-
-Desenvolvido com ❤️ para ajudar desenvolvedores a se prepararem para entrevistas técnicas.
-
-## 🙏 Agradecimentos
-
-Inspirado em técnicas de aprendizado ativo e repetição espaçada para memorização eficaz.
-```
+This project is licensed under the MIT License.
