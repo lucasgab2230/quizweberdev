@@ -7,10 +7,10 @@
     "language_selector": "Language",
     "select_language": "Select Language",
     "english": "English",
-    "portuguese": "Portuguese",
-    "spanish": "Spanish",
-    "chinese": "Chinese",
-    "japanese": "Japanese"
+    "portuguese": "Português",
+    "spanish": "Español",
+    "chinese": "中文",
+    "japanese": "日本語"
   },
   "home": {
     "title": "Code Interview Helper",
