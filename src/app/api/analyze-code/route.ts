@@ -1,6 +1,17 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 
+// Define proper types instead of using 'any'
+interface AnalyzeCodeRequestBody {
+  code: string;
+  questionId: string;
+}
+
+interface GeminiError extends Error {
+  message: string;
+  status?: number;
+}
+
 export async function POST(request: Request) {
   try {
     // Check if the GEMINI_API_KEY is set
@@ -11,7 +22,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { code, questionId } = await request.json();
+    const { code, questionId }: AnalyzeCodeRequestBody = await request.json();
     
     // Initialize the Google Generative AI client
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
@@ -56,26 +67,32 @@ export async function POST(request: Request) {
     const text = response.text();
     
     return NextResponse.json({ feedback: text });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error analyzing code with Gemma 3:", error);
     
     // Provide more specific error messages
-    if (error.message?.includes("API_KEY")) {
-      return NextResponse.json(
-        { error: "Invalid API key for Gemini API" },
-        { status: 401 }
-      );
-    }
+    let errorMessage = "Failed to analyze code with Gemma 3";
     
-    if (error.message?.includes("model")) {
-      return NextResponse.json(
-        { error: "Gemma 3 model not found or not accessible" },
-        { status: 400 }
-      );
+    if (error instanceof Error) {
+      if (error.message?.includes("API_KEY")) {
+        return NextResponse.json(
+          { error: "Invalid API key for Gemini API" },
+          { status: 401 }
+        );
+      }
+      
+      if (error.message?.includes("model")) {
+        return NextResponse.json(
+          { error: "Gemma 3 model not found or not accessible" },
+          { status: 400 }
+        );
+      }
+      
+      errorMessage = error.message;
     }
     
     return NextResponse.json(
-      { error: "Failed to analyze code with Gemma 3: " + (error.message || "Unknown error") },
+      { error: errorMessage },
       { status: 500 }
     );
   }
