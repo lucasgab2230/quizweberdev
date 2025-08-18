@@ -1,0 +1,67 @@
+{
+  "common": {
+    "app_name": "WeberDevCard",
+    "flashcards": "抽认卡",
+    "leetcode": "力扣",
+    "home": "首页",
+    "language_selector": "语言",
+    "select_language": "选择语言",
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español",
+    "chinese": "中文",
+    "japanese": "日本語"
+  },
+  "home": {
+    "title": "代码面试助手",
+    "welcome": "欢迎使用 WeberDevCard",
+    "description": "您准备编程面试的终极工具",
+    "flashcards_section": "使用抽认卡学习",
+    "flashcards_description": "复习50个重要的问答对来准备您的面试",
+    "leetcode_section": "练习力扣题目",
+    "leetcode_description": "通过AI代码审查解决20道精选力扣问题",
+    "get_started": "开始使用"
+  },
+  "flashcards": {
+    "title": "面试抽认卡",
+    "flip_card": "翻转卡片",
+    "previous_card": "上一张卡片",
+    "next_card": "下一张卡片",
+    "card_of": "第 {{current}} 张，共 {{total}} 张",
+    "controls": {
+      "instructions": "控制说明：",
+      "flip": "空格键 - 翻转卡片",
+      "next": "右箭头 - 下一张卡片",
+      "previous": "左箭头 - 上一张卡片"
+    }
+  },
+  "leetcode": {
+    "title": "力扣练习",
+    "select_question": "选择题目",
+    "question": "题目",
+    "difficulty": "难度",
+    "easy": "简单",
+    "medium": "中等",
+    "hard": "困难",
+    "code_editor": "代码编辑器",
+    "run_code": "运行代码",
+    "submit_code": "提交代码",
+    "ai_feedback": "AI反馈",
+    "loading_feedback": "正在分析您的代码...",
+    "no_feedback": "运行代码以获取AI反馈",
+    "feedback_help": "AI将审查您的代码并提供改进建议"
+  },
+  "buttons": {
+    "start_flashcards": "开始抽认卡",
+    "practice_leetcode": "练习力扣",
+    "back_to_home": "返回首页",
+    "view_solution": "查看解答"
+  },
+  "accessibility": {
+    "language_selector": "选择应用程序语言",
+    "navigation_slider": "在抽认卡和力扣之间切换的滑块",
+    "flashcard_flip": "按空格键翻转抽认卡",
+    "flashcard_previous": "按左箭头键转到上一张抽认卡",
+    "flashcard_next": "按右箭头键转到下一张抽认卡"
+  }
+}

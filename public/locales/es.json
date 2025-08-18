@@ -1,0 +1,67 @@
+{
+  "common": {
+    "app_name": "WeberDevCard",
+    "flashcards": "Tarjetas",
+    "leetcode": "LeetCode",
+    "home": "Inicio",
+    "language_selector": "Idioma",
+    "select_language": "Seleccionar Idioma",
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español",
+    "chinese": "中文",
+    "japanese": "日本語"
+  },
+  "home": {
+    "title": "Ayudante de Entrevistas de Código",
+    "welcome": "Bienvenido a WeberDevCard",
+    "description": "Tu herramienta definitiva para prepararte para entrevistas de programación",
+    "flashcards_section": "Estudia con Tarjetas",
+    "flashcards_description": "Revisa 50 pares esenciales de P&R para prepararte para tus entrevistas",
+    "leetcode_section": "Practica Preguntas de LeetCode",
+    "leetcode_description": "Resuelve 20 problemas seleccionados de LeetCode con revisión de código por IA",
+    "get_started": "Comenzar"
+  },
+  "flashcards": {
+    "title": "Tarjetas de Entrevista",
+    "flip_card": "Voltear Tarjeta",
+    "previous_card": "Tarjeta Anterior",
+    "next_card": "Siguiente Tarjeta",
+    "card_of": "Tarjeta {{current}} de {{total}}",
+    "controls": {
+      "instructions": "Controles:",
+      "flip": "ESPACIO - Voltear tarjeta",
+      "next": "FLECHA DERECHA - Siguiente tarjeta",
+      "previous": "FLECHA IZQUIERDA - Tarjeta anterior"
+    }
+  },
+  "leetcode": {
+    "title": "Práctica de LeetCode",
+    "select_question": "Selecciona una Pregunta",
+    "question": "Pregunta",
+    "difficulty": "Dificultad",
+    "easy": "Fácil",
+    "medium": "Medio",
+    "hard": "Difícil",
+    "code_editor": "Editor de Código",
+    "run_code": "Ejecutar Código",
+    "submit_code": "Enviar Código",
+    "ai_feedback": "Retroalimentación de IA",
+    "loading_feedback": "Analizando tu código...",
+    "no_feedback": "Ejecuta tu código para obtener retroalimentación de IA",
+    "feedback_help": "La IA revisará tu código y proporcionará sugerencias para mejorarlo"
+  },
+  "buttons": {
+    "start_flashcards": "Iniciar Tarjetas",
+    "practice_leetcode": "Practicar LeetCode",
+    "back_to_home": "Volver al Inicio",
+    "view_solution": "Ver Solución"
+  },
+  "accessibility": {
+    "language_selector": "Seleccionar idioma de la aplicación",
+    "navigation_slider": "Deslizador de navegación entre tarjetas y leetcode",
+    "flashcard_flip": "Presiona barra espaciadora para voltear la tarjeta",
+    "flashcard_previous": "Presiona flecha izquierda para ir a la tarjeta anterior",
+    "flashcard_next": "Presiona flecha derecha para ir a la siguiente tarjeta"
+  }
+}

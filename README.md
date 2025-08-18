@@ -1,77 +1,65 @@
+# WeberDevCard - Auxiliar de Entrevistas de Código
 
-# WeberDevCard - Flashcards para Entrevistas
+WeberDevCard é uma ferramenta abrangente para ajudar desenvolvedores a se prepararem para entrevistas de programação. Possui flashcards para conceitos essenciais e prática do LeetCode com revisão de código por IA.
 
-Flashcards interativos para estudo de entrevistas técnicas de programação, desenvolvido com HTML, CSS e JavaScript vanilla.
+## Recursos
 
-## 📝 Descrição
+- **Flashcards**: 50 pares essenciais de P&R para preparação de entrevistas
+- **Prática do LeetCode**: 20 problemas selecionados com revisão de código por IA
+- **Suporte a Múltiplos Idiomas**: Inglês, Português, Espanhol, Chinês e Japonês
+- **Design Responsivo**: Funciona em todos os tamanhos de dispositivos
+- **Navegação por Teclado**: Navegação fácil com teclas de seta e barra de espaço
 
-WeberDevCard é uma aplicação simples e eficaz para estudar conceitos de programação através de flashcards. Perfeito para revisão rápida de tópicos importantes antes de entrevistas técnicas.
+## Stack Tecnológica
 
-## 🚀 Funcionalidades
+- **Frontend**: Next.js 14 (App Router) com TypeScript
+- **Estilização**: Tailwind CSS com componentes shadcn/ui
+- **Gerenciamento de Estado**: React Context API
+- **Animações**: Framer Motion
+- **Integração com IA**: Google Gemini API
+- **Deploy**: GitHub Pages com GitHub Actions
 
-- 🔄 Virar flashcards para ver perguntas e respostas
-- ⏮️ ⏭️ Navegação entre cards (anterior/próximo)
-- ⌨️ Navegação por teclado (setas e barra de espaço)
-- 📊 Indicador de progresso
-- 📱 Design responsivo
-- ♿ Acessibilidade com leitores de tela
+## Primeiros Passos
 
-## 🎮 Como Usar
+1. Clone o repositório:
+   \`\`\`bash
+   git clone https://github.com/seu-usuario/weberdevcard.git
+   \`\`\`
 
-1. **Virar card**: Clique no botão "Virar" ou pressione **Barra de Espaço**
-2. **Card anterior**: Clique em "Anterior" ou pressione **Seta para Esquerda** ⬅️
-3. **Próximo card**: Clique em "Próximo" ou pressione **Seta para Direita** ➡️
+2. Instale as dependências:
+   \`\`\`bash
+   pnpm install
+   \`\`\`
 
-## 🛠️ Tecnologias
+3. Crie um arquivo `.env.local` com sua chave da API do Gemini:
+   \`\`\`
+   GEMINI_API_KEY=sua_chave_api_aqui
+   \`\`\`
 
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização e animações 3D
-- **JavaScript** - Lógica e interatividade
-- **Flexbox** - Layout responsivo
-- **Transform 3D** - Efeito de virar cards
+4. Execute o servidor de desenvolvimento:
+   \`\`\`bash
+   pnpm dev
+   \`\`\`
 
-## 📁 Estrutura do Projeto
+5. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-```markdown
-weber-dev-card/
-├── index.html
-├── README.md
-├── css/
-│   └── styles.css
-└── js/
-    └── scripts.js
-```
+## Deploy
 
-## 🐛 Problema Resolvido
+Este projeto está configurado para fazer deploy no GitHub Pages usando GitHub Actions. Simplesmente faça push para a branch principal para acionar o workflow de deploy.
 
-**Bug**: Texto não aparecia nos flashcards
-**Solução**: Adicionado posicionamento absoluto completo (top, left, right, bottom: 0) para os elementos .front e .back
+## Saiba Mais
 
-## 📈 Melhorias Implementadas
+Para aprender mais sobre as tecnologias usadas neste projeto:
 
-- ✅ Correção do bug de texto invisível
-- ✅ Indicador de progresso (Card X de Y)
-- ✅ Navegação por teclado
-- ✅ Acessibilidade com aria-live
-- ✅ Design responsivo mobile-first
+- [Documentação do Next.js](https://nextjs.org/docs)
+- [Documentação do Tailwind CSS](https://tailwindcss.com/docs)
+- [Documentação do shadcn/ui](https://ui.shadcn.com/docs)
+- [Documentação da API do Google Gemini](https://ai.google.dev/docs)
 
-## 🤝 Contribuição
+## Contribuindo
 
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
 
-## 📄 Licença
+## Licença
 
-MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 👨‍💻 Autor
-
-Desenvolvido com ❤️ para ajudar desenvolvedores a se prepararem para entrevistas técnicas.
-
-## 🙏 Agradecimentos
-
-Inspirado em técnicas de aprendizado ativo e repetição espaçada para memorização eficaz.
-```
+Este projeto está licenciado sob a Licença MIT.
